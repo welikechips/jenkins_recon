@@ -20,7 +20,7 @@ echo $host
 mkdir -p jenkins_data/$host
 cd jenkins_data/$host
 
-curl -k -s \
+curl -k -s -m 5 \
 -H "Host: ${host}:8080" \
 -H 'Accept: text/html' \
 "http://${host}:8080/script" \
