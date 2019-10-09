@@ -1,2 +1,7 @@
 jenkins_data/
-allcreds.txt
+allcreds.txt*
+targetips
+not-vulnerable.txt
+vulnerable.txt
+manual.txt
+output.txt
